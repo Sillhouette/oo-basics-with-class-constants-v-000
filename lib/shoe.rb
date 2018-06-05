@@ -14,9 +14,9 @@ class Shoe
   end
 
   def brands=(brand)
-    @brand = brand
-    if(!BRANDS.detect(|stored_brand| stored_brande == brand))
-      BRANDS << brands
+    @brand = brand;
+    if(!(BRANDS.detect{|stored_brand| stored_brande == brand}))
+      BRANDS << brands;
     end
   end
 
