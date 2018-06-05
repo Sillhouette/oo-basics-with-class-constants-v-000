@@ -15,7 +15,6 @@ class Shoe
 
   def brands=(brand)
     @brand = brand;
-    binding.pry;
     if !(BRANDS.detect{|stored_brand| stored_brand == brand})
       BRANDS << brand;
     end
