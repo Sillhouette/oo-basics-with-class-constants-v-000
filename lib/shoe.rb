@@ -13,9 +13,9 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def brands=(brand)
+  def brand=(brand)
     @brand = brand;
-    if !(BRANDS.detect{|stored_brand| stored_brand == brand})
+    BRANDS.detect{|stored_brand| stored_brand == brand}
       BRANDS << brand;
     end
   end
